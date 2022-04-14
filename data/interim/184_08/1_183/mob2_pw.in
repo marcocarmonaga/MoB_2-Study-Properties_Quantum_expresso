@@ -1,0 +1,28 @@
+ &CONTROL
+    prefix='mob2',
+    pseudo_dir='/home/marcocarmonaga/qe-7.0/pseudo',
+    outdir='./tmp',
+ /
+ &SYSTEM
+    ibrav =  4,
+    celldm(1) = 5.64283
+    celldm(3) = 1.183
+    nat =  3,
+    ntyp = 2,
+    nbnd = 20,
+    ecutwfc = 36.0,
+    occupations = 'smearing',
+    smearing = 'gauss',
+    degauss = 0.015,
+ /
+ &ELECTRONS
+ /
+ATOMIC_SPECIES
+   Mo  95.95  Mo_ONCV_PBE-1.2.upf
+   B   10.81  B_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS {crystal}
+   Mo 0.00 0.00 0.00
+   B 0.666666667  0.333333333  0.5
+   B 0.333333333  0.666666667  0.5
+K_POINTS automatic
+   18 18 18   0 0 1
