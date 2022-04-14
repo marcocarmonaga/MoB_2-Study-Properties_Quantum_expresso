@@ -1,0 +1,11 @@
+name: MoB2
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - ipykernel
+  - pandas
+  - matplotlib
+  - scipy
+prefix: /home/marcocarmonaga/miniconda3/envs/MoB2
