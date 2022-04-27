@@ -1,0 +1,5 @@
+&DOS
+    prefix='nbmob2_x100',
+    outdir='/home/max/data/QE/nbmob2/ELEC/nbmob2_x100/tmp',
+    fildos = 'nbmob2_x100.dos'
+ /

@@ -1,0 +1,6 @@
+&BANDS
+    prefix='nbmob2_x100',
+    outdir='/home/max/data/QE/nbmob2/ELEC/nbmob2_x100/tmp',
+    filband = 'nbmob2_x100.bands',
+!    lsym = .true.,
+ /
