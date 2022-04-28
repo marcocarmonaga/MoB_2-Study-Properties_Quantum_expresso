@@ -1,14 +1,14 @@
  &CONTROL
     calculation='nscf',
     prefix='mob2',
-    pseudo_dir='$HOME/qe-7.0/pseudo',
+    pseudo_dir='/home/marcocarmonaga/qe-7.0/pseudo',
     outdir='./tmp',
 !    wf_collect=.true.,
  /
  &SYSTEM
     ibrav =  4,
-    celldm(1) = 5.7280392360209096,
-    celldm(3) = 1.09552365,
+    celldm(1) = 5.42613,
+    celldm(3) = 1.0758,
     nat =  3,
     ntyp = 2,
     nbnd = 20,
@@ -25,7 +25,7 @@
     mixing_beta = 0.7 
  /
 ATOMIC_SPECIES
-   Mo  95.95  Nb0.00Mo1.00.UPF
+   Mo  95.95  Mo_ONCV_PBE-1.2.upf
    B   10.81  B_ONCV_PBE-1.2.upf
 ATOMIC_POSITIONS {crystal}
    Mo 0.00 0.00 0.00

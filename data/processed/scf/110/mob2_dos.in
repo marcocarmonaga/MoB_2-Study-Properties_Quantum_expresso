@@ -1,0 +1,5 @@
+&DOS
+    prefix='mob2',
+    outdir='./tmp',
+    fildos = 'mob2_dos.dos'
+ /

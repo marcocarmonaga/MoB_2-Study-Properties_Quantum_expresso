@@ -1,22 +1,21 @@
  &CONTROL
-    calculation='nscf',
+    calculation='scf',
     prefix='mob2',
-    pseudo_dir='$HOME/qe-7.0/pseudo',
+    pseudo_dir='/home/marcocarmonaga/qe-7.0/pseudo',
     outdir='./tmp',
 !    wf_collect=.true.,
  /
  &SYSTEM
     ibrav =  4,
-    celldm(1) = 5.7280392360209096,
-    celldm(3) = 1.09552365,
+    celldm(1) = 5.37799,
+    celldm(3) = 1.07258,
     nat =  3,
     ntyp = 2,
     nbnd = 20,
     ecutwfc = 36.0,
-    occupations = 'tetrahedra_opt',
- !   occupations = 'smearing',
- !   smearing = 'gauss',
- !   degauss = 0.015,
+    occupations = 'smearing',
+    smearing = 'gauss',
+    degauss = 0.015,
  /
  &ELECTRONS
     diagonalization = 'davidson'
@@ -25,12 +24,11 @@
     mixing_beta = 0.7 
  /
 ATOMIC_SPECIES
-   Mo  95.95  Nb0.00Mo1.00.UPF
+   Mo  95.95  Mo_ONCV_PBE-1.2.upf
    B   10.81  B_ONCV_PBE-1.2.upf
 ATOMIC_POSITIONS {crystal}
    Mo 0.00 0.00 0.00
    B .6666666666666666  .3333333333333333  0.5
    B .3333333333333333  .6666666666666666  0.5
 K_POINTS automatic
-   36 36 36   0 0 1
-!   18 18 18   0 0 1
+   18 18 18   0 0 1

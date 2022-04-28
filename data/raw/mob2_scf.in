@@ -1,8 +1,8 @@
  &CONTROL
     calculation='scf',
-    prefix='nbmob2_x100',
-    pseudo_dir='/media/sf_scientific_docs/QuantumMobile/QE_SESIONES/pseudos/nbmocn/nbmo_ONCV_PBE_1.2',
-    outdir='/home/max/data/QE/nbmob2/ELEC/nbmob2_x100/tmp',
+    prefix='mob2',
+    pseudo_dir='$HOME/qe-7.0/pseudo',
+    outdir='./tmp',
 !    wf_collect=.true.,
  /
  &SYSTEM
