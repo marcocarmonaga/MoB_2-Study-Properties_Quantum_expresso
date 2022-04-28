@@ -1,0 +1,44 @@
+ &CONTROL
+    calculation='bands',
+    prefix='mob2',
+    pseudo_dir='/home/marcocarmonaga/qe-7.0/pseudo',
+    outdir='./tmp',
+!    wf_collect=.true.,
+ /
+ &SYSTEM
+    ibrav =  4,
+    celldm(1) = 5.42613,
+    celldm(3) = 1.0758,
+    nat =  3,
+    ntyp = 2,
+    nbnd = 20,
+    ecutwfc = 36.0,
+ !   occupations = 'tetrahedra',
+ !   occupations = 'tetrahedra_opt',
+ !   occupations = 'smearing',
+ !   smearing = 'gauss',
+ !   degauss = 0.015,
+ /
+ &ELECTRONS
+    diagonalization = 'davidson'
+    mixing_mode = 'plain',
+    conv_thr =  1.0d-8
+    mixing_beta = 0.7 
+ /
+ATOMIC_SPECIES
+   Mo  95.95  Mo_ONCV_PBE-1.2.upf
+   B   10.81  B_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS {crystal}
+   Mo 0.00 0.00 0.00
+   B .6666666666666666  .3333333333333333  0.5
+   B .3333333333333333  .6666666666666666  0.5
+K_POINTS {crystal_b}
+8
+   0.0000000000     0.0000000000     0.0000000000     40 !G
+   0.0000000000     0.5000000000     0.0000000000     20 !M
+   0.3333333333     0.3333333333     0.0000000000     40 !K
+   0.0000000000     0.0000000000     0.0000000000     40 !G
+   0.0000000000     0.0000000000     0.5000000000     40 !A
+   0.0000000000     0.5000000000     0.5000000000     40 !L
+   0.3333333333     0.3333333333     0.5000000000     40 !H
+   0.0000000000     0.0000000000     0.5000000000     0  !A
