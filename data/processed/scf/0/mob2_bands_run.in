@@ -1,6 +1,0 @@
-&BANDS
-    prefix='mob2',
-    outdir='./tmp',
-    filband = 'mob2_bands.bands',
-!    lsym = .true.,
- /

@@ -1,5 +1,5 @@
 
-     Program PWSCF v.7.0 starts on 27Apr2022 at 21:53:51 
+     Program PWSCF v.7.0 starts on 27Apr2022 at 22:10:28 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -14,7 +14,7 @@
 
      MPI processes distributed on     1 nodes
      R & G space division:  proc/nbgrp/npool/nimage =       8
-     386 MiB available memory on the printing compute node when the environment starts
+     449 MiB available memory on the printing compute node when the environment starts
  
      Reading input from mob2_nscf.in
 
@@ -36,17 +36,17 @@
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min          37      37     11                  573      573     107
-     Max          38      38     13                  576      576     110
-     Sum         301     301     97                 4595     4595     865
+     Min          36      36     11                  544      544     103
+     Max          37      37     12                  547      547     105
+     Sum         295     295     91                 4373     4373     835
  
      Using Slab Decomposition
  
 
 
      bravais-lattice index     =            4
-     lattice parameter (alat)  =       5.5112  a.u.
-     unit-cell volume          =     156.8821 (a.u.)^3
+     lattice parameter (alat)  =       5.4261  a.u.
+     unit-cell volume          =     148.8445 (a.u.)^3
      number of atoms/cell      =            3
      number of atomic types    =            2
      number of electrons       =        20.00
@@ -56,18 +56,18 @@
      Exchange-correlation= PBE
                            (   1   4   3   4   0   0   0)
 
-     celldm(1)=   5.511220  celldm(2)=   0.000000  celldm(3)=   1.082180
+     celldm(1)=   5.426130  celldm(2)=   0.000000  celldm(3)=   1.075800
      celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
 
      crystal axes: (cart. coord. in units of alat)
                a(1) = (   1.000000   0.000000   0.000000 )  
                a(2) = (  -0.500000   0.866025   0.000000 )  
-               a(3) = (   0.000000   0.000000   1.082180 )  
+               a(3) = (   0.000000   0.000000   1.075800 )  
 
      reciprocal axes: (cart. coord. in units 2 pi/alat)
                b(1) = (  1.000000  0.577350  0.000000 )  
                b(2) = (  0.000000  1.154701  0.000000 )  
-               b(3) = (  0.000000  0.000000  0.924061 )  
+               b(3) = (  0.000000  0.000000  0.929541 )  
 
 
      PseudoPot. # 1 for Mo read from file:
@@ -106,18 +106,18 @@
 
      site n.     atom                  positions (alat units)
          1           Mo  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
-         2           B   tau(   2) = (   0.5000000   0.2886751   0.5410900  )
-         3           B   tau(   3) = (   0.0000000   0.5773503   0.5410900  )
+         2           B   tau(   2) = (   0.5000000   0.2886751   0.5379000  )
+         3           B   tau(   3) = (   0.0000000   0.5773503   0.5379000  )
 
      number of k points=  2286 (tetrahedron method)
 
      Number of k-points >= 100: set verbosity='high' to print them.
 
-     Dense  grid:     4595 G-vectors     FFT dimensions: (  24,  24,  24)
+     Dense  grid:     4373 G-vectors     FFT dimensions: (  24,  24,  24)
 
-     Estimated max dynamical RAM per process >       2.37 MB
+     Estimated max dynamical RAM per process >       2.36 MB
 
-     Estimated total dynamical RAM >      18.97 MB
+     Estimated total dynamical RAM >      18.86 MB
 
      The potential is recalculated from file :
      ./tmp/mob2.save/charge-density
@@ -127,58 +127,58 @@
      Band Structure Calculation
      Davidson diagonalization with overlap
 
-     ethr =  5.00E-11,  avg # of iterations = 36.6
+     ethr =  5.00E-11,  avg # of iterations = 36.1
 
-     total cpu time spent up to now is      310.4 secs
+     total cpu time spent up to now is      289.9 secs
 
      End of band structure calculation
 
      Number of k-points >= 100: set verbosity='high' to print the bands.
 
-     the Fermi energy is    22.1856 ev
-     (compare with:    22.1800 eV, computed in scf)
+     the Fermi energy is    23.4813 ev
+     (compare with:    23.4766 eV, computed in scf)
 
      Writing all to output data dir ./tmp/mob2.save/
  
-     init_run     :      0.10s CPU      0.14s WALL (       1 calls)
-     electrons    :    217.11s CPU    236.22s WALL (       1 calls)
+     init_run     :      0.05s CPU      0.08s WALL (       1 calls)
+     electrons    :    206.31s CPU    219.31s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     potinit      :      0.01s CPU      0.01s WALL (       1 calls)
-     hinit0       :      0.06s CPU      0.08s WALL (       1 calls)
+     potinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     hinit0       :      0.03s CPU      0.06s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    179.97s CPU    198.95s WALL (       1 calls)
-     v_of_rho     :      0.01s CPU      0.01s WALL (       1 calls)
+     c_bands      :    168.02s CPU    180.93s WALL (       1 calls)
+     v_of_rho     :      0.00s CPU      0.00s WALL (       1 calls)
 
      Called by c_bands:
      init_us_2    :      0.13s CPU      0.14s WALL (    2286 calls)
-     init_us_2:cp :      0.13s CPU      0.14s WALL (    2286 calls)
-     cegterg      :    173.84s CPU    191.99s WALL (    4958 calls)
+     init_us_2:cp :      0.13s CPU      0.13s WALL (    2286 calls)
+     cegterg      :    162.15s CPU    174.36s WALL (    4914 calls)
 
      Called by *egterg:
-     cdiaghg      :     51.36s CPU     54.94s WALL (   85881 calls)
-     h_psi        :    107.64s CPU    120.55s WALL (   90839 calls)
-     g_psi        :      0.49s CPU      0.52s WALL (   83595 calls)
+     cdiaghg      :     50.09s CPU     52.94s WALL (   84905 calls)
+     h_psi        :    100.28s CPU    108.76s WALL (   89819 calls)
+     g_psi        :      0.39s CPU      0.41s WALL (   82619 calls)
 
      Called by h_psi:
-     h_psi:calbec :      4.04s CPU      4.46s WALL (   90839 calls)
-     vloc_psi     :    100.02s CPU    112.18s WALL (   90839 calls)
-     add_vuspsi   :      2.67s CPU      2.93s WALL (   90839 calls)
+     h_psi:calbec :      3.63s CPU      4.02s WALL (   89819 calls)
+     vloc_psi     :     93.26s CPU    101.15s WALL (   89819 calls)
+     add_vuspsi   :      2.51s CPU      2.69s WALL (   89819 calls)
 
      General routines
-     calbec       :      3.81s CPU      4.22s WALL (   90839 calls)
-     fft          :      0.03s CPU      0.05s WALL (      10 calls)
-     fftw         :     92.08s CPU    103.74s WALL ( 2183752 calls)
-     davcio       :      0.21s CPU      0.32s WALL (    4572 calls)
+     calbec       :      3.40s CPU      3.79s WALL (   89819 calls)
+     fft          :      0.01s CPU      0.04s WALL (      10 calls)
+     fftw         :     85.41s CPU     92.85s WALL ( 2163230 calls)
+     davcio       :      0.20s CPU      0.51s WALL (    4572 calls)
  
      Parallel routines
  
-     PWSCF        :   4m48.82s CPU   5m14.05s WALL
+     PWSCF        :   4m37.74s CPU   4m53.72s WALL
 
  
-   This run was terminated on:  21:59: 5  27Apr2022            
+   This run was terminated on:  22:15:22  27Apr2022            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
