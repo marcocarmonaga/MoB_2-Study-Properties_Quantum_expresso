@@ -10,3 +10,5 @@ for directory in $(ls)
         echo "Terminado ${directory}"
         cd ..
     done
+
+shutdown now
