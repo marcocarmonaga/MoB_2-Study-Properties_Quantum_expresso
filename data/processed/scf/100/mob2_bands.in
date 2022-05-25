@@ -1,7 +1,7 @@
  &CONTROL
     calculation='bands',
     prefix='mob2',
-    pseudo_dir='/home/marcocarmonaga/qe-7.0/pseudo',
+    pseudo_dir='/home/marcocarmonaga/Apps/qe-7.0/pseudo',
     outdir='./tmp',
 !    wf_collect=.true.,
  /

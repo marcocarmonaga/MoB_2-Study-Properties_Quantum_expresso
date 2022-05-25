@@ -70,7 +70,7 @@
 
 
      PseudoPot. # 1 for Mo read from file:
-     /home/marcocarmonaga/qe-7.0/pseudo/Mo_ONCV_PBE-1.2.upf
+     /home/marcocarmonaga/Apps/qe-7.0/pseudo/Mo_ONCV_PBE-1.2.upf
      MD5 check sum: 2665c9f4159700498d9a5f7573bd8e9f
      Pseudo is Norm-conserving, Zval = 14.0
      Generated using ONCVPSP code by D. R. Hamann
@@ -83,7 +83,7 @@
                 l(6) =   2
 
      PseudoPot. # 2 for B  read from file:
-     /home/marcocarmonaga/qe-7.0/pseudo/B_ONCV_PBE-1.2.upf
+     /home/marcocarmonaga/Apps/qe-7.0/pseudo/B_ONCV_PBE-1.2.upf
      MD5 check sum: eb3cbeacc2d324d57d903df00f564d27
      Pseudo is Norm-conserving, Zval =  3.0
      Generated using ONCVPSP code by D. R. Hamann

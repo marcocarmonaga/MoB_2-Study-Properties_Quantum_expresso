@@ -1,0 +1,16 @@
+Phonon calc for qp01
+ &INPUTPH
+    prefix='nbmob2_x000',
+    tr2_ph=1.0d-14,
+    outdir='/home/max/data/QE/nbmob2/PHON_test/nbmob2_x000/tmp',
+    low_directory_check=.true.,
+    amass(1)=92.906,
+    reduce_io=.true.,
+    ldisp=.true.,
+!    lqdir=.true.,
+    nq1=3,
+    nq2=3,
+    nq3=3,
+    start_q=01, last_q=01,
+    fildyn="x000.dyn",
+ /
