@@ -12,5 +12,5 @@ Phonon calc for qp06
     nq2=3,
     nq3=3,
     start_q=06, last_q=06,
-    fildyn="fonon_.dyn",
+    fildyn="x000.dyn",
  /
