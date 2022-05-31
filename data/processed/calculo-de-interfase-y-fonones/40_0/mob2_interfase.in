@@ -7,8 +7,8 @@
  /
  &SYSTEM
     ibrav =  4,
-    celldm(1) = 5.71334,
-    celldm(3) = 1.10154,
+    celldm(1) = 5.8733350421208156,
+    celldm(3) = 1.07051490,
     nat =  3,
     ntyp = 2,
     nbnd = 20,
@@ -25,7 +25,7 @@
     mixing_beta = 0.7 
  /
 ATOMIC_SPECIES
-   Mo  92.906  Mo_ONCV_PBE-1.2.upf
+   Mo  92.906  Nb1.00Mo0.00.upf
    B   10.81   B_ONCV_PBE-1.2.upf
 ATOMIC_POSITIONS {crystal}
    Mo 0.00 0.00 0.00

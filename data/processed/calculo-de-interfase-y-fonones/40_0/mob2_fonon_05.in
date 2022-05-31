@@ -4,7 +4,7 @@ Phonon calc for qp05
     tr2_ph=1.0d-14,
     outdir='./tmp',
     low_directory_check=.true.,
-    amass(1)=95.94,
+    amass(1)=92.906,
     reduce_io=.true.,
     ldisp=.true.,
 !    lqdir=.true.,
