@@ -1,4 +1,6 @@
 #!/bin/bash
+source /home/marcocarmonaga/miniconda3/etc/profile.d/conda.sh
+source setvars.sh
 cd ../data/processed/calculo-de-interfase-y-fonones
 
 for directory in $(ls)

@@ -1,0 +1,35 @@
+ &CONTROL
+    calculation='scf',
+    prefix='mob2',
+    pseudo_dir='/home/marcocarmonaga/Apps/qe-7.0/pseudo',
+    outdir='./tmp',
+    wf_collect=.true.,
+ /
+ &SYSTEM
+    ibrav =  4,
+    celldm(1) = 5.8733350421208156,
+    celldm(3) = 1.07051490,
+    nat =  3,
+    ntyp = 2,
+    nbnd = 20,
+    ecutwfc = 48.0,
+    ecutrho = 672.0,
+    occupations = 'smearing',
+    smearing = 'gauss',
+    degauss = 0.015,
+ /
+ &ELECTRONS
+    diagonalization = 'davidson'
+    mixing_mode = 'plain',
+    conv_thr =  1.0d-8
+    mixing_beta = 0.7 
+ /
+ATOMIC_SPECIES
+   Mo  92.906  Nb1.00Mo0.00.upf
+   B   10.81   B_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS {crystal}
+   Mo 0.00 0.00 0.00
+   B .6666666666666666  .3333333333333333  0.5
+   B .3333333333333333  .6666666666666666  0.5
+K_POINTS automatic
+   36 36 36   0 0 1

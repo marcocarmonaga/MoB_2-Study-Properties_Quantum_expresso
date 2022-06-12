@@ -1,0 +1,16 @@
+Phonon calc for qp01
+ &INPUTPH
+    prefix='mob2',
+    tr2_ph=1.0d-14,
+    outdir='./tmp',
+    low_directory_check=.true.,
+    amass(1)=92.906,
+    reduce_io=.true.,
+    ldisp=.true.,
+!    lqdir=.true.,
+    nq1=3,
+    nq2=3,
+    nq3=3,
+    start_q=01, last_q=01,
+    fildyn="x000.dyn",
+ /
