@@ -1,7 +1,7 @@
 #!/bin/bash
 source /home/marcocarmonaga/miniconda3/etc/profile.d/conda.sh
 source setvars.sh
-cd ../data/processed/calculo-de-interfase-y-fonones
+cd /home/marcocarmonaga/Documents/MoB_2-Study-Properties_Quantum_expresso/data/processed/calculo-de-interfase-y-fonones
 
 for directory in $(ls)
     do
